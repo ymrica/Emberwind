@@ -1,0 +1,234 @@
+.sheet-container {
+    width: 802px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 3px;
+    background-color: white;
+}
+
+.sheet-header {
+    width: 800px;
+    height:171px;
+	background-image: url("https://raw.githubusercontent.com/ymrica/roll20-character-sheets/Emberwind/Emberwind/emberwind-logo-black-small.png");
+	background-repeat: no-repeat;
+	background-position: center;
+    padding: 0;
+    display: flex;
+}
+
+.sheet-boxstats {
+    width: 800px;
+    height: 90px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.sheet-boxskills {
+    width: 800px;
+    padding: 0;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.sheet-boxinventory {
+    width: 800px;
+    height: 90px;
+    padding: 0;
+}
+
+.sheet-headsec {
+    width: 788px;
+    height: 24px;
+    padding: 5px;
+    margin: 15px 1px 1px 1px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.sheet-headsm {
+    width: 85px;
+    height: 20px;
+    padding: 10px 0;
+    margin: 1px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3C3C3C;
+    color: #FFFFFF;
+}
+
+.sheet-headmed {
+    width: 95px;
+    height: 20px;
+    padding: 10px 0;
+    margin: 1px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3C3C3C;
+    color: #FFFFFF;
+}
+
+.sheet-headlrg {
+    width: 333px;
+    height: 20px;
+    padding: 10px 5px;
+    margin: 1px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    background-color: #3C3C3C;
+    color: #FFFFFF;
+}
+
+.sheet-fullheading {
+    width: 798px;
+    height: 24px;
+    padding: 12px 0px 0px 5px;
+    margin: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    background-color: white;
+}
+
+.sheet-partialheading {
+    width: 346px;
+    height: 24px;
+    padding: 12px 0px 0px 5px;
+    margin: 1px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    background-color: white;
+}
+
+.sheet-headingdet {
+    width: 440px;
+    height: 24px;
+    padding: 12px 0px 0px 5px;
+    margin: 1px;
+    font-size: 11px;
+    font-style: italic;
+    text-align: left;
+    background-color: white;
+}
+
+.sheet-movesm {
+    width: 85px;
+    height: 40px;
+    padding: 10px 0;
+    margin: 1px;
+    font-size: 11px;
+    text-align: center;
+    background-color: #e0e0e0;
+}
+
+.sheet-movemed {
+    width: 95px;
+    height: 40px;
+    padding: 10px 0;
+    margin: 1px;
+    font-size: 11px;
+    text-align: center;
+    background-color: #e0e0e0;
+}
+
+.sheet-movelrg {
+    width: 333px;
+    height: 40px;
+    padding: 10px 5px;
+    margin: 1px;
+    font-size: 11px;
+    text-align: left;
+    background-color: #e0e0e0;
+}
+
+.sheet-skillsm {
+    width: 85px;
+    height: 82px;
+    padding: 10px 0;
+    margin: 1px;
+    font-size: 11px;
+    text-align: center;
+    background-color: #e0e0e0;
+}
+
+.sheet-skillmed {
+    width: 95px;
+    height: 82px;
+    padding: 10px 0;
+    margin: 1px;
+    font-size: 11px;
+    text-align: center;
+    background-color: #e0e0e0;
+}
+
+.sheet-skilllrg {
+    width: 333px;
+    height: 82px;
+    padding: 10px 5px;
+    margin: 1px;
+    font-size: 11px;
+    text-align: left;
+    background-color: #e0e0e0;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+
+textarea {
+    border: none;
+    height: 75px;
+    resize: none;
+    overflow: hidden;
+    font-size: 11px;
+}
+
+textarea:focus {
+    background-color: lightblue;
+}
+
+select {
+    border: 1px solid #000000;
+    font-size: 11px;
+}
+
+.sheet-inputteeny {
+    width: 15px;
+    text-align: center;
+    font-size: 10px;
+    border: 1px solid #000000;
+    padding: 0;
+    margin: 0;
+}
+
+.sheet-inputtiny {
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding: 2px;
+    width: 15px;
+    text-align: center;
+}
+
+.sheet-inputsm {
+    width: 71px;
+    text-align: center;
+}
+
+.sheet-inputmed {
+    width: 76px;
+    text-align: center;
+}
+
+.sheet-inputlrg {
+    width: 325px;
+    text-align: left;
+}
+
+
+

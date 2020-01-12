@@ -1,0 +1,368 @@
+<div class="container">
+    <div class="header"></div>
+    <div class="boxstats">
+        <div class="headsec">STATS</div>
+    </div>
+    <div class="boxskills">
+        <div class="headsec">SKILLS</div>
+        <div class="headmed">Name</div>
+        <div class="headsm">Type</div>
+        <div class="headsm">Target</div>
+        <div class="headsm">Range</div>
+        <div class="headlrg">Effect</div>
+        <div class="headmed">Action Speed</div>
+
+        <div class="partialheading">MOVEMENT</div>
+        <div class="headingdet">You cannot end your Movement in an Occupied Square.</div>
+            <div class="movemed"><b>Move</b></div>
+            <div class="movesm"></div>
+            <div class="movesm"></div>
+            <div class="movesm"></div>
+            <div class="movelrg">Move <input type="text" class="inputtiny" name="attr_movemin" />-<input type="text" class="inputtiny" name="attr_movemax" /> Squares.<br />Can move through friendly Combatants.</div>
+            <div class="movemed">Slow</div>
+            <div class="movemed"><b>Shift</b></div>
+            <div class="movesm"></div>
+            <div class="movesm"></div>
+            <div class="movesm"></div>
+            <div class="movelrg">Move <input type="text" class="inputtiny" name="attr_shift" /> Square(s).<br />Can move through friendly Combatants.</div>
+            <div class="movemed">Fast</div>
+
+        <div class="partialheading">MANEUVER</div>
+        <div class="headingdet">You cannot end your Maneuver in an Occupied Square.</div>
+            <div class="skillmed"><textarea class="inputmed" name="attr_maneuver"></textarea></div>
+            <div class="skillsm"></div>
+            <div class="skillsm"></div>
+            <div class="skillsm"></div>
+            <div class="skilllrg"><textarea class="inputlrg" name="attr_maneuvereff"></textarea></div>
+            <div class="skillmed">
+                <select class="inputmed" name="attr_maneuverspd">
+                    <option name="-">Select</option>
+                    <option name="free">Free</option>
+                    <option name="fast">Fast</option>
+                    <option name="slow">Slow</option>
+                    <option name="fastslow">Fast+Slow</option>
+                    <option name="slowslow">Slow+Slow</option>
+                </select>
+            </div>
+
+        <div class="fullheading">BASIC ACTIONS</div>
+            <div class="skillmed"><textarea class="inputmed" name="attr_basic1"></textarea></div>
+            <div class="skillsm">Melee</div>
+            <div class="skillsm"><textarea class="inputsm" name="attr_basic1targ"></textarea></div>
+            <div class="skillsm"><input type="text" class="inputtiny" name="attr_basic1rng" /></div>
+            <div class="skilllrg"><textarea class="inputlrg" name="attr_basic1eff"></textarea></div>
+            <div class="skillmed">
+                <select class="inputmed" name="attr_basic1spd">
+                    <option name="-">Select</option>
+                    <option name="free">Free</option>
+                    <option name="fast">Fast</option>
+                    <option name="slow">Slow</option>
+                    <option name="fastslow">Fast+Slow</option>
+                    <option name="slowslow">Slow+Slow</option>
+                </select>
+            </div>
+            <div class="skillmed"><textarea class="inputmed" name="attr_basic2"></textarea></div>
+            <div class="skillsm">Ranged</div>
+            <div class="skillsm"><textarea class="inputsm" name="attr_basic2targ"></textarea></div>
+            <div class="skillsm"><input type="text" class="inputtiny" name="attr_basic2rng" /></div>
+            <div class="skilllrg"><textarea class="inputlrg" name="attr_basic2eff"></textarea></div>
+            <div class="skillmed">
+                <select class="inputmed" name="attr_basic2spd">
+                    <option name="-">Select</option>
+                    <option name="free">Free</option>
+                    <option name="fast">Fast</option>
+                    <option name="slow">Slow</option>
+                    <option name="fastslow">Fast+Slow</option>
+                    <option name="slowslow">Slow+Slow</option>
+                </select>
+            </div>
+
+        <div class="partialheading">CLASS ACTIONS</div>
+        <div class="headingdet">Trigger Limit: <input type="text" class="inputteeny" name="attr_limtrig" /> Sustain Limit: <input type="text" class="inputteeny" name="attr_limsust" /> Amplify Limit: <input type="text" class="inputteeny" name="attr_limamp" /></div>
+            <div class="skillmed"><textarea class="inputmed" name="attr_class1"></textarea></div>
+            <div class="skillsm">
+                <select class="inputsm" name="attr_class1type1">
+                    <option name="-">Select</option>
+                    <option name="passive">Passive</option>
+                    <option name="general">General</option>
+                    <option name="trigger">Trigger</option>
+                    <option name="sustain">Sustain</option>
+                    <option name="amplify">Amplify</option>
+                </select>
+                <select class="inputsm" name="attr_class1type2">
+                    <option name="-">Select</option>
+                    <option name="exploit">Exploit</option>
+                    <option name="spell">Spell</option>
+                </select>
+            </div>
+            <div class="skillsm"><textarea class="inputsm" name="attr_class1targ"></textarea></div>
+            <div class="skillsm">
+                <select class="inputsm" name="attr_class1rng1">
+                    <option name="-">Select</option>
+                    <option name="melee">Melee</option>
+                    <option name="ranged">Ranged</option>
+                </select>
+                <input type="text" class="inputtiny" name="attr_class1rng2" /></div>
+            <div class="skilllrg"><textarea class="inputlrg" name="attr_class1eff"></textarea></div>
+            <div class="skillmed">
+                <select class="inputmed" name="attr_class1spd">
+                    <option name="-">Select</option>
+                    <option name="free">Free</option>
+                    <option name="fast">Fast</option>
+                    <option name="slow">Slow</option>
+                    <option name="fastslow">Fast+Slow</option>
+                    <option name="slowslow">Slow+Slow</option>
+                </select>
+            </div>
+            <div class="skillmed"><textarea class="inputmed" name="attr_class2"></textarea></div>
+            <div class="skillsm">
+                <select class="inputsm" name="attr_class2type1">
+                    <option name="-">Select</option>
+                    <option name="passive">Passive</option>
+                    <option name="general">General</option>
+                    <option name="trigger">Trigger</option>
+                    <option name="sustain">Sustain</option>
+                    <option name="amplify">Amplify</option>
+                </select>
+                <select class="inputsm" name="attr_class2type2">
+                    <option name="-">Select</option>
+                    <option name="exploit">Exploit</option>
+                    <option name="spell">Spell</option>
+                </select>
+            </div>
+            <div class="skillsm"><textarea class="inputsm" name="attr_class2targ"></textarea></div>
+            <div class="skillsm">
+                <select class="inputsm" name="attr_class2rng1">
+                    <option name="-">Select</option>
+                    <option name="melee">Melee</option>
+                    <option name="ranged">Ranged</option>
+                </select>
+                <input type="text" class="inputtiny" name="attr_class2rng2" /></div>
+            <div class="skilllrg"><textarea class="inputlrg" name="attr_class2eff"></textarea></div>
+            <div class="skillmed">
+                <select class="inputmed" name="attr_class2spd">
+                    <option name="-">Select</option>
+                    <option name="free">Free</option>
+                    <option name="fast">Fast</option>
+                    <option name="slow">Slow</option>
+                    <option name="fastslow">Fast+Slow</option>
+                    <option name="slowslow">Slow+Slow</option>
+                </select>
+            </div>
+            <div class="skillmed"><textarea class="inputmed" name="attr_class3"></textarea></div>
+            <div class="skillsm">
+                <select class="inputsm" name="attr_class3type1">
+                    <option name="-">Select</option>
+                    <option name="passive">Passive</option>
+                    <option name="general">General</option>
+                    <option name="trigger">Trigger</option>
+                    <option name="sustain">Sustain</option>
+                    <option name="amplify">Amplify</option>
+                </select>
+                <select class="inputsm" name="attr_class3type2">
+                    <option name="-">Select</option>
+                    <option name="exploit">Exploit</option>
+                    <option name="spell">Spell</option>
+                </select>
+            </div>
+            <div class="skillsm"><textarea class="inputsm" name="attr_class3targ"></textarea></div>
+            <div class="skillsm">
+                <select class="inputsm" name="attr_class3rng1">
+                    <option name="-">Select</option>
+                    <option name="melee">Melee</option>
+                    <option name="ranged">Ranged</option>
+                </select>
+                <input type="text" class="inputtiny" name="attr_class3rng2" /></div>
+            <div class="skilllrg"><textarea class="inputlrg" name="attr_class3eff"></textarea></div>
+            <div class="skillmed">
+                <select class="inputmed" name="attr_class3spd">
+                    <option name="-">Select</option>
+                    <option name="free">Free</option>
+                    <option name="fast">Fast</option>
+                    <option name="slow">Slow</option>
+                    <option name="fastslow">Fast+Slow</option>
+                    <option name="slowslow">Slow+Slow</option>
+                </select>
+            </div>
+            <div class="skillmed"><textarea class="inputmed" name="attr_class4"></textarea></div>
+            <div class="skillsm">
+                <select class="inputsm" name="attr_class4type1">
+                    <option name="-">Select</option>
+                    <option name="passive">Passive</option>
+                    <option name="general">General</option>
+                    <option name="trigger">Trigger</option>
+                    <option name="sustain">Sustain</option>
+                    <option name="amplify">Amplify</option>
+                </select>
+                <select class="inputsm" name="attr_class4type2">
+                    <option name="-">Select</option>
+                    <option name="exploit">Exploit</option>
+                    <option name="spell">Spell</option>
+                </select>
+            </div>
+            <div class="skillsm"><textarea class="inputsm" name="attr_class4targ"></textarea></div>
+            <div class="skillsm">
+                <select class="inputsm" name="attr_class4rng1">
+                    <option name="-">Select</option>
+                    <option name="melee">Melee</option>
+                    <option name="ranged">Ranged</option>
+                </select>
+                <input type="text" class="inputtiny" name="attr_class4rng2" /></div>
+            <div class="skilllrg"><textarea class="inputlrg" name="attr_class4eff"></textarea></div>
+            <div class="skillmed">
+                <select class="inputmed" name="attr_class4spd">
+                    <option name="-">Select</option>
+                    <option name="free">Free</option>
+                    <option name="fast">Fast</option>
+                    <option name="slow">Slow</option>
+                    <option name="fastslow">Fast+Slow</option>
+                    <option name="slowslow">Slow+Slow</option>
+                </select>
+            </div>
+            <div class="skillmed"><textarea class="inputmed" name="attr_class5"></textarea></div>
+            <div class="skillsm">
+                <select class="inputsm" name="attr_class5type1">
+                    <option name="-">Select</option>
+                    <option name="passive">Passive</option>
+                    <option name="general">General</option>
+                    <option name="trigger">Trigger</option>
+                    <option name="sustain">Sustain</option>
+                    <option name="amplify">Amplify</option>
+                </select>
+                <select class="inputsm" name="attr_class5type2">
+                    <option name="-">Select</option>
+                    <option name="exploit">Exploit</option>
+                    <option name="spell">Spell</option>
+                </select>
+            </div>
+            <div class="skillsm"><textarea class="inputsm" name="attr_class5targ"></textarea></div>
+            <div class="skillsm">
+                <select class="inputsm" name="attr_class5rng1">
+                    <option name="-">Select</option>
+                    <option name="melee">Melee</option>
+                    <option name="ranged">Ranged</option>
+                </select>
+                <input type="text" class="inputtiny" name="attr_class5rng2" /></div>
+            <div class="skilllrg"><textarea class="inputlrg" name="attr_class5eff"></textarea></div>
+            <div class="skillmed">
+                <select class="inputmed" name="attr_class5spd">
+                    <option name="-">Select</option>
+                    <option name="free">Free</option>
+                    <option name="fast">Fast</option>
+                    <option name="slow">Slow</option>
+                    <option name="fastslow">Fast+Slow</option>
+                    <option name="slowslow">Slow+Slow</option>
+                </select>
+            </div>
+            <div class="skillmed"><textarea class="inputmed" name="attr_class6"></textarea></div>
+            <div class="skillsm">
+                <select class="inputsm" name="attr_class6type1">
+                    <option name="-">Select</option>
+                    <option name="passive">Passive</option>
+                    <option name="general">General</option>
+                    <option name="trigger">Trigger</option>
+                    <option name="sustain">Sustain</option>
+                    <option name="amplify">Amplify</option>
+                </select>
+                <select class="inputsm" name="attr_class6type2">
+                    <option name="-">Select</option>
+                    <option name="exploit">Exploit</option>
+                    <option name="spell">Spell</option>
+                </select>
+            </div>
+            <div class="skillsm"><textarea class="inputsm" name="attr_class6targ"></textarea></div>
+            <div class="skillsm">
+                <select class="inputsm" name="attr_class6rng1">
+                    <option name="-">Select</option>
+                    <option name="melee">Melee</option>
+                    <option name="ranged">Ranged</option>
+                </select>
+                <input type="text" class="inputtiny" name="attr_class6rng2" /></div>
+            <div class="skilllrg"><textarea class="inputlrg" name="attr_class6eff"></textarea></div>
+            <div class="skillmed">
+                <select class="inputmed" name="attr_class6spd">
+                    <option name="-">Select</option>
+                    <option name="free">Free</option>
+                    <option name="fast">Fast</option>
+                    <option name="slow">Slow</option>
+                    <option name="fastslow">Fast+Slow</option>
+                    <option name="slowslow">Slow+Slow</option>
+                </select>
+            </div>
+
+        <div class="fullheading">TIDE-TURNER ACTIONS</div>
+            <div class="skillmed"><textarea class="inputmed" name="attr_tideturn1"></textarea></div>
+            <div class="skillsm">
+                <select class="inputsm" name="attr_tideturn1type1">
+                    <option name="-">Select</option>
+                    <option name="passive">Passive</option>
+                    <option name="general">General</option>
+                    <option name="trigger">Trigger</option>
+                    <option name="sustain">Sustain</option>
+                    <option name="amplify">Amplify</option>
+                </select>
+                <select class="inputsm" name="attr_tideturn1type2">
+                    <option name="-">Select</option>
+                    <option name="exploit">Exploit</option>
+                    <option name="spell">Spell</option>
+                </select>
+            </div>
+            <div class="skillsm"><textarea class="inputsm" name="attr_tideturn1targ"></textarea></div>
+            <div class="skillsm">
+                <select class="inputsm" name="attr_tideturn1rng1">
+                    <option name="-">Select</option>
+                    <option name="melee">Melee</option>
+                    <option name="ranged">Ranged</option>
+                </select>
+                <input type="text" class="inputtiny" name="attr_tideturn1rng2" /></div>
+            <div class="skilllrg"><textarea class="inputlrg" name="attr_tideturn1eff"></textarea></div>
+            <div class="skillmed">
+                <select class="inputmed" name="attr_tideturn1spd">
+                    <option name="-">Select</option>
+                    <option name="free">Free</option>
+                    <option name="fast">Fast</option>
+                    <option name="slow">Slow</option>
+                    <option name="fastslow">Fast+Slow</option>
+                    <option name="slowslow">Slow+Slow</option>
+                </select>
+            </div>
+            <div class="skillmed"><textarea class="inputmed" name="attr_tideturn2"></textarea></div>
+            <div class="skillsm">
+                <select class="inputsm" name="attr_tideturn2type1">
+                    <option name="-">Select</option>
+                    <option name="passive">Passive</option>
+                    <option name="general">General</option>
+                    <option name="trigger">Trigger</option>
+                    <option name="sustain">Sustain</option>
+                    <option name="amplify">Amplify</option>
+                </select>
+                <select class="inputsm" name="attr_tideturn2type2">
+                    <option name="-">Select</option>
+                    <option name="exploit">Exploit</option>
+                    <option name="spell">Spell</option>
+                </select>
+            </div>
+            <div class="skillsm"><textarea class="inputsm" name="attr_tideturn2targ"></textarea></div>
+            <div class="skillsm">
+                <select class="inputsm" name="attr_tideturn2rng1">
+                    <option name="-">Select</option>
+                    <option name="melee">Melee</option>
+                    <option name="ranged">Ranged</option>
+                </select>
+                <input type="text" class="inputtiny" name="attr_tideturn2rng2" /></div>
+            <div class="skilllrg"><textarea class="inputlrg" name="attr_tideturn2eff"></textarea></div>
+            <div class="skillmed">
+                <select class="inputmed" name="attr_tideturn2spd">
+                    <option name="-">Select</option>
+                    <option name="free">Free</option>
+                    <option name="fast">Fast</option>
+                    <option name="slow">Slow</option>
+                    <option name="fastslow">Fast+Slow</option>
+                    <option name="slowslow">Slow+Slow</option>
+                </select>
+            </div>
+    </div>
+    <div class="boxinventory">
+        <div class="headsec">INVENTORY</div>
+    </div>
+</div>
